@@ -6,7 +6,7 @@ import { errorHandler, notFound } from "./middleware/error";
 
 export const app = express();
 
-app.use(cors({ origin: config.frontendUrls }));
+app.use(cors());
 app.use(express.json());
 
 app.use("/api", apiRouter);
